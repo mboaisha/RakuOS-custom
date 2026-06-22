@@ -10,3 +10,6 @@ image-version: latest
 # you can include multiple instances of the same module
 modules:
   - type: signing
+  - from-file: displayManager.yml
+  - from-file: sway.yml
+  - from-file: apps.yml

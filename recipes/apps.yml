@@ -1,0 +1,10 @@
+modules:
+  - type: dnf
+    repos:
+      copr:
+        - mboaisha/assortment
+    install:
+      packages:
+        - lavat
+        - neovim
+        - foot
