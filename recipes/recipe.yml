@@ -10,6 +10,16 @@ image-version: latest
 # you can include multiple instances of the same module
 modules:
   - type: signing
-  - from-file: displayManager.yml
-  - from-file: sway.yml
-  - from-file: apps.yml
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - JetBrainsMono
+  - type: default-flatpaks
+    configurations:
+      - scope: system
+        notify: false
+        repo:
+          url: https://flathub.org/repo/flathub.flatpakrepo
+          title: Flathub (system)
+        install:
+          - org.chromium.Chromium 
